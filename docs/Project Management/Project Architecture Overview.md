@@ -71,3 +71,15 @@ class UIPrinter
   - **Unit Testing**
   - **Modularity and Reusability**
   - **Ease of access for development by a larger team**
+
+# Unit Testing
+
+  **Unit Testing** is a massively useful practice where you write code that will test individual peices of you're project every time you make a build of your project. These tests will be thrown in your Debug and let you know if any changes made since the last build caused any bugs elsewhere in the project. This provides an instant alert that something is broken, tells you exactly where the problem is, and if written well, tells you the nature of the problem as well. These will save you, hours, and hours of debuging hunting down phantom issues in class **Dependancies**. (using the above example csvParser and conversationManager are dependancies of UIPrinter) 
+
+# Reusability
+
+  In a **Modular** project, individual proscesses are made accessible and as such can be re-used every time that functionality is needed. In the above example, csvParser can be used not only by conversationManager but also in other places in the project where csv parsing capabilities are needed. This is much preferable to writing that script, over, and over and over. Not only is this a labourious proscess but also is more prone to breaking, and entirely unnessecary.
+
+# Ease of Access
+
+  When working with a team, **Modular Design** means that different team members can work on the implementation of different pieces of code simultaneously without worrying about merge issues from version control systems (like git) and other weirdness.
