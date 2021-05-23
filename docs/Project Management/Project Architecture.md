@@ -9,8 +9,13 @@ Without architecture, just sitting down and making a project of any signifiant s
 ```
 class csvToUI
 {
-  public string csvInformation;
-
+  private string csvInformation = Resources.Load("Assets/Resources/csvInfo");;
+  
+  private void OnAwake()
+  {
+    PrintCsv();
+  }
+  
   public void PrintCsv()
   {
     //Prints csvInformation onto a UI
